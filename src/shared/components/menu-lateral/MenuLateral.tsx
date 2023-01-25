@@ -15,7 +15,7 @@ import {
 import { Box } from '@mui/system';
 import Perfil from '../../../assets/avatar-railson.jpg';
 import { ReactNode } from 'react';
-import { useDrawerContext } from '../../contexts';
+import { useAppThemeContext, useDrawerContext } from '../../contexts';
 import { useNavigate, useResolvedPath, useMatch } from 'react-router-dom';
 
 interface IListItemProps {
@@ -30,7 +30,6 @@ const ListItemLink: React.FC<IListItemProps> = ({ to, icon, label, onClick }) =>
 
   const resolvedPath = useResolvedPath(to);
   const match = useMatch({ path: resolvedPath.pathname, end: false });
-
 
   const hanldeClick = () => {
     navigate(to);
@@ -47,12 +46,12 @@ const ListItemLink: React.FC<IListItemProps> = ({ to, icon, label, onClick }) =>
   );
 };
 
-
 export const MenuLateral: React.FC<{ children: ReactNode }> = ({ children }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
   const { isDrawerOpen, toggleDrawerOpen, drawerOptions } = useDrawerContext();
+  const { toggleTheme } = useAppThemeContext();
 
   return (
     <>
@@ -76,6 +75,17 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({ children }) => 
                   onClick={smDown ? toggleDrawerOpen : undefined}
                 />
               ))}
+            </List>
+          </Box>
+
+          <Box>
+            <List component='nav'>
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemIcon>
+                  <Icon>dark_mode</Icon>
+                </ListItemIcon>
+                <ListItemText primary='Alternar tema' />
+              </ListItemButton>
             </List>
           </Box>
         </Box>
