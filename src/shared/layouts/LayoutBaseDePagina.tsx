@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import { Icon, IconButton, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
+import { Icon, IconButton, Theme, Typography, useMediaQuery, useTheme, Box } from "@mui/material";
 import { useDrawerContext } from "../contexts";
 
 interface ILayoutBaseDePaginaProps {
