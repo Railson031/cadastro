@@ -1,7 +1,6 @@
 
 import {
   Avatar,
-  Box,
   Divider,
   Drawer,
   List,
@@ -12,6 +11,8 @@ import {
   Icon,
   useMediaQuery
 } from '@mui/material';
+
+import { Box } from '@mui/system';
 import Perfil from '../../../assets/avatar-railson.jpg';
 import { ReactNode } from 'react';
 import { useDrawerContext } from '../../contexts';
