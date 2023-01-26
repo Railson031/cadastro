@@ -1,5 +1,6 @@
-import { Environment } from "../../../environments";
-import { Api } from "../axios-config";
+
+import { Api } from '../axios-config/index';
+import { Environment } from '../../../environments/index';
 
 interface IListagemPessoa {
   id: number;
@@ -88,10 +89,10 @@ const deleteById = async (id: number): Promise<void | Error> => {
   }
 };
 
-export const PessoasService = () => {
-  getAll
-  getById
-  create
-  updateById
-  deleteById
-};
+export const PessoasService = {
+  getAll,
+  getById,
+  create,
+  updateById,
+  deleteById,
+}; 
