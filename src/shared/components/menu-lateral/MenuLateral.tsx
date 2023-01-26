@@ -1,4 +1,3 @@
-
 import {
   Avatar,
   Box,
@@ -17,7 +16,6 @@ import Perfil from '../../../assets/avatar-railson.jpg';
 import { ReactNode } from 'react';
 import { useAppThemeContext, useDrawerContext } from '../../contexts';
 import { useNavigate, useResolvedPath, useMatch } from 'react-router-dom';
-
 interface IListItemProps {
   icon: string;
   to: string;

@@ -10,7 +10,6 @@ import {
   useMediaQuery,
   useTheme
 } from '@mui/material';
-
 interface IFerramentasDeDetalhesProps {
   textoBotaoNovo?: string;
 
