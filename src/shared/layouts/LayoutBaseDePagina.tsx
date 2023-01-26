@@ -1,7 +1,15 @@
 import { ReactNode } from "react";
-import { Icon, IconButton, Theme, Typography, useMediaQuery, useTheme, Box } from "@mui/material";
-import { useDrawerContext } from "../contexts";
+import {
+  Icon,
+  IconButton,
+  Theme,
+  Typography,
+  useMediaQuery,
+  useTheme,
+  Box
+} from "@mui/material";
 
+import { useDrawerContext } from "../contexts";
 interface ILayoutBaseDePaginaProps {
   titulo: string;
   barraDeFerramentas?: ReactNode;
