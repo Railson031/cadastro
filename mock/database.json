@@ -1,12 +1,6 @@
 {
   "pessoas": [
     {
-      "id": 1,
-      "email": "railson031@hotmail.com",
-      "cidadeId": 1,
-      "nomeCompleto": "Railson de Carvalho Conceição"
-    },
-    {
       "id": 2,
       "email": "railson031@hotmail.com",
       "cidadeId": 1,
@@ -23,12 +17,6 @@
       "email": "railson031@hotmail.com",
       "cidadeId": 1,
       "nomeCompleto": "Raimundo das Neves Conceição"
-    },
-    {
-      "id": 5,
-      "email": "railson031@hotmail.com",
-      "cidadeId": 1,
-      "nomeCompleto": "Carla das Neves Conceição"
     },
     {
       "id": 6,
