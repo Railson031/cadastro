@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import {
+  LinearProgress,
   Paper,
   Table,
   TableBody,
   TableCell,
   TableContainer,
+  TableFooter,
   TableHead,
   TableRow
 } from "@mui/material";
@@ -14,6 +16,7 @@ import { useDebounce } from "../../shared/hooks";
 import { LayoutBaseDePagina } from "../../shared/layouts";
 import { FerramentasDaListagem } from "../../shared/components";
 import { IListagemPessoa, PessoasService } from "../../shared/services";
+import { Environment } from "../../shared/environments";
 
 
 export const ListagemDePessoas: React.FC = () => {
@@ -82,9 +85,22 @@ export const ListagemDePessoas: React.FC = () => {
                 </TableRow>
               ))}
             </TableBody>
+
+            {totalCount === 0 && !isLoading && (
+              <caption>{Environment.LISTAGEM_VAZIA}</caption>
+            )}
+
+            <TableFooter>
+              {isLoading && (
+                <TableRow>
+                  <TableCell colSpan={3}>
+                    <LinearProgress variant='indeterminate' />
+                  </TableCell>
+                </TableRow>
+              )}
+            </TableFooter>
           </Table>
         </TableContainer>
-
       </LayoutBaseDePagina>
     </div>
   );

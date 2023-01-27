@@ -10,7 +10,7 @@ export const Environment = {
   /**
    * Texto exibido quando nenhum registro é encontrado em uma listagem 
    */
-  LISTAGEM_VAZIA: 'Nenhum registro  encontrado',
+  LISTAGEM_VAZIA: 'Nenhum registro  encontrado.',
   /**
    * Url base de conclusão dos dados dessa aplicação
    */
