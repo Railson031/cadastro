@@ -71,6 +71,12 @@
       "email": "railson031@hotmail.com",
       "cidadeId": 1,
       "nomeCompleto": "Wilton das Neves Conceição"
+    },
+    {
+      "id": 17,
+      "nomeCompleto": "Alderico de Souza",
+      "email": "alderico@gmail.com",
+      "cidadeId": "4"
     }
   ]
 }
