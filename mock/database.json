@@ -4,7 +4,7 @@
       "id": 2,
       "nomeCompleto": "Thais de Carvalho Conceição",
       "email": "thais02@hotmail.com",
-      "cidadeId": 1
+      "cidadeId": 3
     },
     {
       "id": 3,
@@ -101,6 +101,18 @@
       "nomeCompleto": "Nacifi Almeida",
       "email": "nacifi@gmail.com",
       "cidadeId": "2"
+    },
+    {
+      "nomeCompleto": "Renato Alves",
+      "email": "renato@gmail.com",
+      "cidadeId": 1,
+      "id": 22
+    },
+    {
+      "nomeCompleto": "Cascatinha Almeida",
+      "email": "cascatinha@gmail.com",
+      "cidadeId": 3,
+      "id": 23
     }
   ],
   "cidades": [
@@ -115,6 +127,18 @@
     {
       "nome": "Feira de Santana",
       "id": 3
+    },
+    {
+      "nome": "Itabuna",
+      "id": 4
+    },
+    {
+      "nome": "Catu",
+      "id": 5
+    },
+    {
+      "nome": "Lauro de Freitas",
+      "id": 6
     }
   ]
 }
