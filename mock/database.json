@@ -102,5 +102,19 @@
       "email": "nacifi@gmail.com",
       "cidadeId": "2"
     }
+  ],
+  "cidades": [
+    {
+      "nome": "Salvador",
+      "id": 1
+    },
+    {
+      "nome": "Simões Filho",
+      "id": 2
+    },
+    {
+      "nome": "Feira de Santana",
+      "id": 3
+    }
   ]
 }
