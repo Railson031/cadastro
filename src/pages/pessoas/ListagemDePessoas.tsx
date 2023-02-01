@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useEffect, useMemo, useState } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Icon,
   IconButton,
@@ -13,14 +13,13 @@ import {
   TableFooter,
   TableHead,
   TableRow
-} from "@mui/material";
+} from '@mui/material';
 
-import { useDebounce } from "../../shared/hooks";
-import { LayoutBaseDePagina } from "../../shared/layouts";
-import { FerramentasDaListagem } from "../../shared/components";
-import { IListagemPessoa, PessoasService } from "../../shared/services";
-import { Environment } from "../../shared/environments";
-
+import { useDebounce } from '../../shared/hooks';
+import { LayoutBaseDePagina } from '../../shared/layouts';
+import { FerramentasDaListagem } from '../../shared/components';
+import { IListagemPessoa, PessoasService } from '../../shared/services';
+import { Environment } from '../../shared/environments';
 
 export const ListagemDePessoas: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();

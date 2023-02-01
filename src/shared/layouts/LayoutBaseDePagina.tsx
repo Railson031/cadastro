@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 import {
   Icon,
   IconButton,
@@ -7,9 +7,9 @@ import {
   useMediaQuery,
   useTheme,
   Box
-} from "@mui/material";
+} from '@mui/material';
 
-import { useDrawerContext } from "../contexts";
+import { useDrawerContext } from '../contexts';
 interface ILayoutBaseDePaginaProps {
   titulo: string;
   barraDeFerramentas?: ReactNode;
@@ -48,7 +48,7 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ childre
         </Box>
       )}
 
-      <Box flex={1} overflow="auto">
+      <Box flex={1} overflow='auto'>
         {children}
       </Box>
     </Box>

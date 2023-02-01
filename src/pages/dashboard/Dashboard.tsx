@@ -1,5 +1,5 @@
-import { FerramentasDeDetalhes } from "../../shared/components";
-import { LayoutBaseDePagina } from "../../shared/layouts";
+import { FerramentasDeDetalhes } from '../../shared/components';
+import { LayoutBaseDePagina } from '../../shared/layouts';
 
 export const Dashboard = () => {
   return (
