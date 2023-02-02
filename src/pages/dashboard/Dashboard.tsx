@@ -1,8 +1,10 @@
-import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { FerramentasDaListagem } from '../../shared/components';
+
 import { LayoutBaseDePagina } from '../../shared/layouts';
+import { FerramentasDaListagem } from '../../shared/components';
 import { CidadesService, PessoasService } from '../../shared/services';
+
+import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
 
 export const Dashboard = () => {
 
