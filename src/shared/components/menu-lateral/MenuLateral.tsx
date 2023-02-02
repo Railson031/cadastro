@@ -14,7 +14,7 @@ import {
 
 import Perfil from '../../../assets/avatar-railson.jpg';
 import { ReactNode } from 'react';
-import { useAppThemeContext, useDrawerContext } from '../../contexts';
+import { useAppThemeContext, useAuthContext, useDrawerContext } from '../../contexts';
 import { useNavigate, useResolvedPath, useMatch } from 'react-router-dom';
 interface IListItemProps {
   icon: string;
@@ -50,6 +50,7 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({ children }) => 
 
   const { isDrawerOpen, toggleDrawerOpen, drawerOptions } = useDrawerContext();
   const { toggleTheme } = useAppThemeContext();
+  const { logout } = useAuthContext();
 
   return (
     <>
@@ -83,6 +84,12 @@ export const MenuLateral: React.FC<{ children: ReactNode }> = ({ children }) => 
                   <Icon>dark_mode</Icon>
                 </ListItemIcon>
                 <ListItemText primary='Alternar tema' />
+              </ListItemButton>
+              <ListItemButton onClick={logout}>
+                <ListItemIcon>
+                  <Icon>logout</Icon>
+                </ListItemIcon>
+                <ListItemText primary='Sair' />
               </ListItemButton>
             </List>
           </Box>

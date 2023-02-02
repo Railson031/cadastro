@@ -117,8 +117,8 @@
   ],
   "cidades": [
     {
-      "nome": "Salvador",
-      "id": 1
+      "id": 1,
+      "nome": "Salvador"
     },
     {
       "nome": "Simões Filho",
@@ -129,8 +129,8 @@
       "id": 3
     },
     {
-      "nome": "Itabuna",
-      "id": 4
+      "id": 4,
+      "nome": "Ilheus"
     },
     {
       "nome": "Catu",
@@ -139,6 +139,10 @@
     {
       "nome": "Lauro de Freitas",
       "id": 6
+    },
+    {
+      "nome": "Itabuna",
+      "id": 7
     }
   ],
   "auth": {
