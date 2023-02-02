@@ -140,5 +140,8 @@
       "nome": "Lauro de Freitas",
       "id": 6
     }
-  ]
+  ],
+  "auth": {
+    "accessToken": "aaaaaaaaaaa.bbbbbbbbbbb.cccccccccc"
+  }
 }
